@@ -148,7 +148,6 @@ namespace SuperheroMemoryGame
                 allowClick = false;
                 clickTimer.Start();
             }
-            //endTime = ;
             
             firstGuess = null;
             if (pictureBoxes.Any(p => p.Visible)) return;
