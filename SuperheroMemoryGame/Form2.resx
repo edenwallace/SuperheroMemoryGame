@@ -117,4 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Enter your name, pick a picture set, and your preferred time for the game. Then press start to begin the game. Click on a question mark to reveal the picture behind it, match all the pictures before the time runs out to win the game! 
+</value>
+  </data>
 </root>

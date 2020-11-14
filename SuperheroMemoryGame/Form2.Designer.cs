@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
@@ -38,16 +39,15 @@
             this.richTextBox1.Font = new System.Drawing.Font("Agency FB", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.Location = new System.Drawing.Point(12, 12);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(294, 240);
+            this.richTextBox1.Size = new System.Drawing.Size(294, 360);
             this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "Press start to begin the game. Click on a question mark to reveal the picture beh" +
-    "ind it, match all the pictures before the time runs out to win the game! ";
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(319, 278);
+            this.ClientSize = new System.Drawing.Size(319, 384);
             this.Controls.Add(this.richTextBox1);
             this.Name = "Form2";
             this.Text = "Form2";

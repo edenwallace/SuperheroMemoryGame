@@ -123,12 +123,13 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Items.AddRange(new object[] {
-            "00:59 - CoolGuy",
+            "00:01 - RiskyGamer",
             "00:25 - Eden",
-            "00:01 - RiskyGamer"});
+            "00:59 - CoolGuy"});
             this.listBox1.Location = new System.Drawing.Point(737, 85);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(121, 186);
+            this.listBox1.Sorted = true;
             this.listBox1.TabIndex = 20;
             // 
             // comboBox1
