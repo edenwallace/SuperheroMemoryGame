@@ -116,5 +116,29 @@
   <ItemGroup>
     <None Include="Resources\question.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img16.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

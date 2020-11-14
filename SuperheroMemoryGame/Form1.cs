@@ -17,9 +17,8 @@ namespace SuperheroMemoryGame
         Random rnd = new Random();
         Timer clickTimer = new Timer(); //new instance of random number generator class
         int time = 60; //time to play the game
-        Timer endTime;
         Timer timer = new Timer { Interval = 1000 }; //time interval for timer
-        
+         
 
         public Form1()
         {
@@ -45,6 +44,29 @@ namespace SuperheroMemoryGame
                     Properties.Resources.img6,
                     Properties.Resources.img7,
                     Properties.Resources.img8,
+                };
+            }
+        }
+
+        private PictureBox[] pictureBoxes2
+        {
+            get { return Controls.OfType<PictureBox>().ToArray(); } //adds picture boxes to an array
+        }
+
+        private static IEnumerable<Image> images2 //creates access to query images, links images from resources
+        {
+            get
+            {
+                return new Image[] //returns a new image from the array
+                {
+                    Properties.Resources.img9,
+                    Properties.Resources.img10,
+                    Properties.Resources.img11,
+                    Properties.Resources.img12,
+                    Properties.Resources.img13,
+                    Properties.Resources.img14,
+                    Properties.Resources.img15,
+                    Properties.Resources.img16,
                 };
             }
         }
@@ -102,15 +124,27 @@ namespace SuperheroMemoryGame
                 return pictureBoxes[num]; 
             }
 
-            private void setRandomImages()
+        private void setRandomImages()
+        {
+            if (imageSelector.Text.Contains("1")) 
             {
                 foreach (var image in images)
                 {
                     getFreeSlot().Tag = image;
-                    getFreeSlot().Tag = image; 
+                    getFreeSlot().Tag = image;
+                }
+            }
+            else if (imageSelector.Text.Contains("2"))
+            {
+                foreach (var image in images2)
+                {
+                    getFreeSlot().Tag = image;
+                    getFreeSlot().Tag = image;
                 }
             }
 
+
+        }
             private void CLICKTIMER_TICK(object sender, EventArgs e)
             {
                 HideImages();
@@ -189,6 +223,25 @@ namespace SuperheroMemoryGame
             }
         }
 
-     
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.Text.Contains("30"))
+            {
+                time = 30; 
+            }
+            else if (comboBox1.Text.Contains("60"))
+            {
+                time = 60; 
+            }
+            else if (comboBox1.Text.Contains("90"))
+            {
+                time = 90; 
+            }
+            else if (comboBox1.Text.Contains("120"))
+            {
+                time = 120; 
+            }
+            
+        }
     }
 }
